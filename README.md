@@ -10,7 +10,6 @@
 [![Golang](https://img.shields.io/badge/golang-1.18-brightgreen.svg)](https://golang.google.cn)
 [![GoDoc](https://img.shields.io/badge/doc-pkg.go.dev-informational.svg)](https://pkg.go.dev/github.com/go-pay/gopay)
 [![Go](https://github.com/go-pay/gopay/actions/workflows/go.yml/badge.svg)](https://github.com/go-pay/gopay/actions/workflows/go.yml)
-[![Qodana](https://github.com/go-pay/gopay/actions/workflows/code_quality.yml/badge.svg)](https://github.com/go-pay/gopay/actions/workflows/code_quality.yml)
 [![GitHub Release](https://img.shields.io/github/v/release/go-pay/gopay)](https://github.com/go-pay/gopay/releases)
 [![License](https://img.shields.io/github/license/go-pay/gopay)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Go Report Card](https://goreportcard.com/badge/github.com/go-pay/gopay)](https://goreportcard.com/report/github.com/go-pay/gopay)
@@ -67,9 +66,10 @@ func main() {
     * `gopay/paypal/client_test.go`
     * `gopay/apple/verify_test.go`
     * 或 examples
-* 有问题请加QQ群（加群验证答案：gopay），或加微信好友拉群。在此，非常感谢提出宝贵意见和反馈问题的同志们！
+* 接入gopay示例项目(可参考接入使用方式)：[gopay-platform](https://github.com/go-pay/gopay-platform)
+* 有问题请加QQ群(加群验证答案：gopay) 或 加微信好友(备注：gopay开发)拉群。在此，非常感谢提出宝贵意见和反馈问题的同志们！
 * 开发过程中，请尽量使用正式环境，1分钱测试法！
-* 承接各类业务外包项目开发（前端+后端，架构设计->系统开发->部署运营），行业经验丰富，费用合理，有需要的加微信联系。
+* 业余时间接各类业务外包项目开发(前端+后端，架构设计->系统开发->部署运营)，如需要加微信联系。
 
 QQ群：
 <img width="280" height="280" src=".github/qq_gopay.png"/>

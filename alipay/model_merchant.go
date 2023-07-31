@@ -21,6 +21,13 @@ type TradeRelationBatchQueryResponse struct {
 	Sign         string                   `json:"sign"`
 }
 
+type TradeSettleConfirmResponse struct {
+	Response     *TradeOrderSettle `json:"alipay_trade_settle_confirm_response"`
+	AlipayCertSn string            `json:"alipay_cert_sn,omitempty"`
+	SignData     string            `json:"-"`
+	Sign         string            `json:"sign"`
+}
+
 type TradeOrderSettleResponse struct {
 	Response     *TradeOrderSettle `json:"alipay_trade_order_settle_response"`
 	AlipayCertSn string            `json:"alipay_cert_sn,omitempty"`
@@ -79,6 +86,7 @@ type RoyaltyDetail struct {
 	TransInType   string `json:"trans_in_type"`
 	Amount        string `json:"amount"`
 	State         string `json:"state"`
+	DetailId      string `json:"detail_id"`
 	ErrorCode     string `json:"error_code"`
 	ErrorDesc     string `json:"error_desc"`
 }

@@ -2,10 +2,12 @@ package alipay
 
 const (
 	// URL
-	baseUrl            = "https://openapi.alipay.com/gateway.do"
-	sandboxBaseUrl     = "https://openapi.alipaydev.com/gateway.do"
-	baseUrlUtf8        = "https://openapi.alipay.com/gateway.do?charset=utf-8"
-	sandboxBaseUrlUtf8 = "https://openapi.alipaydev.com/gateway.do?charset=utf-8"
+	baseUrl = "https://openapi.alipay.com/gateway.do"
+	//sandboxBaseUrl     = "https://openapi.alipaydev.com/gateway.do"
+	sandboxBaseUrl = "https://openapi-sandbox.dl.alipaydev.com/gateway.do"
+	baseUrlUtf8    = "https://openapi.alipay.com/gateway.do?charset=utf-8"
+	//sandboxBaseUrlUtf8 = "https://openapi.alipaydev.com/gateway.do?charset=utf-8"
+	sandboxBaseUrlUtf8 = "https://openapi-sandbox.dl.alipaydev.com/gateway.do?charset=utf-8"
 
 	LocationShanghai          = "Asia/Shanghai"
 	PKCS1            PKCSType = 1 // 非Java
@@ -17,7 +19,7 @@ const (
 
 var (
 	//不需要处理AppAuthToken的方法
-	notRemoveAppAuthToken = map[string]bool{
+	appAuthTokenInBizContent = map[string]bool{
 		"alipay.open.auth.token.app.query": true,
 	}
 )
