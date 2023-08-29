@@ -2,7 +2,7 @@
 
 # GoPay
 
-### 微信、支付宝、PayPal、QQ 的 Golang 版本SDK
+### 微信、支付宝、QQ、通联支付、拉卡拉、PayPal 的 Golang 版本SDK
 
 [![Github](https://img.shields.io/github/followers/iGoogle-ink?label=Follow&style=social)](https://github.com/iGoogle-ink)
 [![Github](https://img.shields.io/github/forks/go-pay/gopay?label=Fork&style=social)](https://github.com/go-pay/gopay/fork)
@@ -47,8 +47,9 @@ func main() {
 
 * #### [支付宝支付](https://github.com/go-pay/gopay/blob/main/doc/alipay.md)
 * #### [微信支付](https://github.com/go-pay/gopay/blob/main/doc/wechat_v3.md)
-* #### [通联支付](https://github.com/go-pay/gopay/blob/main/doc/allinpay.md)
 * #### [QQ支付](https://github.com/go-pay/gopay/blob/main/doc/qq.md)
+* #### [通联支付](https://github.com/go-pay/gopay/blob/main/doc/allinpay.md)
+* #### [拉卡拉支付](https://github.com/go-pay/gopay/blob/main/doc/lakala.md)
 * #### [Paypal支付](https://github.com/go-pay/gopay/blob/main/doc/paypal.md)
 * #### [Apple支付校验](https://github.com/go-pay/gopay/blob/main/doc/apple.md)
 
@@ -58,11 +59,17 @@ func main() {
 
 # 三、其他说明
 
+* 如需自定义Log输出，请调用以下方法设置自定义Logger，实现 `xlog.XLogger` 接口即可。
+    * `xlog.SetDebugLog()`
+    * `xlog.SetInfoLog()`
+    * `xlog.SetWarnLog()`
+    * `xlog.SetErrLog()`
 * 各支付方式接入，请仔细查看 `xxx_test.go` 使用方式
     * `gopay/wechat/v3/client_test.go`
     * `gopay/alipay/client_test.go`
-    * `gopay/allinpay/client_test.go`
     * `gopay/qq/client_test.go`
+    * `gopay/allinpay/client_test.go`
+    * `gopay/lakala/client_test.go`
     * `gopay/paypal/client_test.go`
     * `gopay/apple/verify_test.go`
     * 或 examples
